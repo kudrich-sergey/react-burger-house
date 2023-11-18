@@ -1,0 +1,118 @@
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contacts {
+  position: relative;
+  background-image: url("../../assets/images/contacts_bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  .common_title {
+    font-family: "Merriweather";
+    text-align: center;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+    padding-top: 70px;
+  }
+
+  &_image {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 837px);
+    z-index: -1;
+  }
+
+  &_form {
+    border-radius: 16px;
+    border: 1px solid #353535;
+    background: #211a16;
+    margin-top: 40px;
+    width: 394px;
+    padding: 24px;
+    margin-left: 730px;
+    margin-bottom: 30px;
+
+    &_text {
+      font-size: 22px;
+      line-height: 29px;
+      text-align: center;
+    }
+
+    &_inputs {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    &_input {
+      width: 344px;
+      height: 60px;
+      background: linear-gradient(95.61deg, #da8023 0%, #e2b438 100%);
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        width: 342px;
+        height: 58px;
+        padding: 16px 10px;
+        border-radius: 8px;
+        border: 1px solid #da8023;
+        background: #211a16;
+        font-size: 18px;
+        color: #fff;
+        outline: none;
+        border: 1px solid transparent;
+      }
+    }
+
+    .button {
+      border-radius: 8px;
+      background: linear-gradient(96deg, #da8823 0%, #e2b438 100%);
+      width: 344px;
+      height: 58px;
+      padding: 19px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      cursor: pointer;
+      outline: none;
+      color: #191411;
+      font-size: 18px;
+
+      &:hover {
+        background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
+      }
+    }
+  }
+}
+
+.error {
+  background: red;
+}
+
+@media (max-width: 1366px) {
+  .contacts {
+    &_image {
+      position: absolute;
+      top: 60px;
+      right: calc(100% - 740px);
+      z-index: -1;
+    }
+    &_form_inputs {
+      img {
+        width: 60%;
+      }
+    }
+  }
+}

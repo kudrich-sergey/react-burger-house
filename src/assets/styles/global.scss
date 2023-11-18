@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather-Black.ttf");
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  background-color: #191411;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  cursor: default;
+  overflow-x: hidden;
+}

@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.common_title {
+  font-family: "Merriweather";
+  text-align: center;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+  padding-top: 70px;
+}
+
+.products {
+  background-image: url("../../assets/images/burgers_bg.png");
+  background-position: top center;
+  background-size: 1400px;
+  padding-bottom: 70px;
+
+  &_items {
+    margin-top: 60px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 384px);
+  }
+}
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .products {
+    background-size: 1150px;
+    padding-bottom: 45px;
+
+    &_items {
+      margin-top: 24px;
+      grid-template-columns: repeat(3, 356px);
+    }
+  }
+}

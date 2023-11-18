@@ -1,0 +1,77 @@
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.common_title {
+  margin-top: 42px;
+  font-family: "Merriweather";
+  text-align: center;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+  padding-top: 70px;
+}
+
+.why {
+  background-image: url("../../assets/images/why_bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-bottom: 180px;
+
+  &_items {
+    margin-top: 80px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(3, 312px);
+    justify-content: center;
+  }
+
+  &_item {
+    text-align: center;
+
+    &_title {
+      font-size: 24px;
+      line-height: 29px;
+      padding: 24px 0;
+    }
+
+    &_text {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .common_title {
+    font-size: 62px;
+  }
+
+  .why {
+    padding-bottom: 45px;
+
+    &_items {
+      margin-top: 80px;
+      gap: 50px;
+      grid-template-columns: repeat(3, 312px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .common_title {
+    font-size: 36px;
+  }
+
+  .why {
+    &_items {
+      margin-top: 40px;
+      grid-template-columns: repeat(1, auto);
+      padding: 0 24px;
+    }
+  }
+}
